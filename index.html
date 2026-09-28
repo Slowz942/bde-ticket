@@ -72,7 +72,8 @@
   }
   html, body { background: var(--page); color: var(--text); }
   body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
-  button { font: inherit; color: inherit; cursor: pointer; }
+  /* Hors calque : ne rien imposer d'autre, sinon les couleurs Tailwind (text-ink…) sont écrasées */
+  button { cursor: pointer; }
   :focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
 
   .shell { min-height: 100dvh; display: grid; grid-template-columns: minmax(280px, 400px) auto; justify-content: center; align-items: start; gap: clamp(32px, 6vw, 96px); padding-inline: 24px; padding-block: 24px; background: radial-gradient(900px 600px at 70% 40%, rgb(124 92 255 / .16), transparent 70%), var(--page); }
